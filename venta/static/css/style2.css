@@ -1,0 +1,110 @@
+
+/*Probando barra de navegacion para el menu del admin*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.header_adm{
+    background-color: #1b3039;
+    background-image: radial-gradient(circle at 13.75% 53.17%, #6e6865 0, #474d50 25%, #1a2f39 50%, #001424 75%, #000014 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    padding: 5px 3%;
+}
+
+.header_adm .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header_adm .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;   
+}
+.header_adm .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header_adm .nav-links{
+    list-style: none;
+    padding-top: 15px;
+    transition: 0.2s;
+}
+
+.header_adm .nav-links li{
+    display: inline-block;
+    padding: 0 30px;    
+}
+
+.header_adm .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header_adm .nav-links a{
+    font-size: large;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header_adm .nav-links li a:hover {
+    color: #ffbc0e;
+}
+
+.header_adm .nav-links li:hover{
+    transition: 0.3s;
+}
+
+div .menu_adm{
+    margin:auto ;
+    margin-top: 133px;
+    margin-bottom: 133px;    
+    background-color: #353e42;    
+    width: 30%;
+    height: 60vh;
+    border-radius: 3%;    
+}
+
+.pie_pagina_adm{
+    background-color: #1b3039;
+    background-image: radial-gradient(circle at 13.75% 53.17%, #6e6865 0, #474d50 25%, #1a2f39 50%, #001424 75%, #000014 100%);
+    width: 100%;
+}
+
+.pie_pagina_adm .grupo_footer{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    padding: 10px 0px;        
+}
+
+.pie_pagina_adm .grupo_footer small{
+    font-size: large;
+    color: #eceff1;
+    text-decoration: none;  
+    justify-content: center;  
+}
+
+.pie_pagina_adm .grupo_footer small:hover{
+    transform: scale(1.2);
+}
+
+.pie_pagina_adm .grupo_footer small:hover{
+    color: #ffbc0e;
+}
+
+.pie_pagina_adm .grupo_footer small:hover{
+    transition: 0.3s;
+}
+

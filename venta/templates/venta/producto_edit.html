@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Producto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>     
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    <header class="header_adm">
+        <div class="logo">
+            <img src="{% static 'img/logo171x177-removebg-preview.png' %}" alt="Logo de la marca">
+        </div>        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">KlandeztinoGourmet Administrador</a></li>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="#"> 
+                        {% if  user.is_authenticated %}
+                            Bienvenido: {{user.username}}                      
+                        {% else %}
+                            <a href="{% url 'login' %}">Log In</a>  
+                        {% endif %}        
+                    </a></li>
+                <li><a href="{% url 'logout'%}">Cerrar Sesión</a></li>    
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div>        
+        <h3>MODIFICAR PRODUCTO</h3>
+    </div>
+    <br>
+    <div>
+        {% if user.username != 'cliente1' %}
+            {% if producto %}
+                
+                <form action="{% url 'actualizar_productos' %}" method="POST" id="formulario_agregar" class="formulario container" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <!-- GRUPO ID PRODUCTO -->                              
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_id_producto">
+                        <!--<label for="modificar_id_producto" class="formulario__label">Codigo Producto: </label>&nbsp; -->
+                        <div class="formulario__grupo-input">
+                            <input type="hidden" class="form-control formulario__input" id="modificar_id_producto" name="modificar_id_producto" value="{{producto.id_producto}}">
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_id_producto">error</p>-->
+                    </div>                
+                    <!-- GRUPO NOMBRE PRODUCTO -->                      
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_nombre_producto">
+                        <label for="modificar_nombre_producto" class="formulario__label">Nombre Producto: </label>&nbsp;
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="form-control formulario__input" id="modificar_nombre_producto" name="modificar_nombre_producto" value="{{producto.nombre_producto}}">
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_nombre_producto">error</p>-->
+                    </div>
+                    <!-- GRUPO PRECIO PRODUCTO -->                      
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_precio_producto">
+                        <label for="modificar_precio_producto" class="formulario__label">Precio Producto: </label>&nbsp;
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="form-control formulario__input" id="modificar_precio_producto" name="modificar_precio_producto" value="{{producto.precio_producto}}">
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_precio_producto">error</p>-->
+                    </div>
+                    <!-- GRUPO STOCK PRODUCTO -->
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_stock_producto">
+                        <label for="modificar_stock_producto" class="formulario__label">Stock Producto: </label>&nbsp;
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="form-control formulario__input" id="modificar_stock_producto" name="modificar_stock_producto" value="{{producto.stock_producto}}">
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_stock_producto">error</p>-->
+                    </div>
+                    <!-- GRUPO DESCRIPCION PRODUCTO -->
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_desc_producto">
+                        <label for="modificar_desc_producto" class="formulario__label">Descripcion Producto: </label>&nbsp;
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="form-control formulario__input" id="modificar_desc_producto" name="modificar_desc_producto" value="{{producto.desc_producto}}">
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_desc_producto">error</p>-->
+                    </div>
+                    <!-- GRUPO IMAGEN PRODUCTO -->
+                <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_imagen_producto">
+                    <label for="modificar_imagen_producto" class="formulario__label">Imagen: </label>&nbsp;
+                    <div class="formulario__grupo-input">
+                        <input type="file" class="form-control formulario__input" id="modificar_imagen_producto" name="modificar_imagen_producto" value="{{producto.imagen_producto}}">
+                    </div>
+                    <!-- <p class="formulario__input-error1" id="texto_modificar_imagen_producto">error</p>-->
+                </div>
+                    <!--------------------PROBANDO MODIFICAR EL FAVORITO---------------------------->
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_favorito">
+                        <label for="modificar_favorito" class="formulario__label">Favorito:</label>&nbsp;
+                        <div class="formulario__grupo-input">
+                            <select name="modificar_favorito" id="modificar_favorito">                                
+                                    <option value="0">No</option>
+                                    <option value="1">Si</option>                                
+                            </select>
+                        </div>
+                    </div>
+                    <!-------------------------------------------->
+                    <!-- GRUPO CATEGORIA PRODUCTO -->
+                    <div class="mb-3 mt-3 formulario__grupo col-sm-12 col-md-12 col-xl-12" id="grupo__modificar_tipo_producto">
+                        <label for="modificar_tipo_producto" class="formulario__label">Categoria de Producto: </label>
+                        <div class="formulario__grupo-input">
+                            <select name="modificar_tipo_producto" id="modificar_tipo_producto">
+                                {% for tmp in tipo_productos %}
+                                    {% if tmp.id_tipo_producto == producto.id_tipo_producto %}
+                                        <option value="{{tmp.id_tipo_producto}}" selected>{{tmp.desc_tipo_producto}}</option>
+                                    {% else %}
+                                        <option value="{{tmp.id_tipo_producto}}">{{tmp.desc_tipo_producto}}</option>
+                                    {% endif %}       
+                                {% endfor %}    
+                            </select>
+                        </div>
+                        <!-- <p class="formulario__input-error1" id="texto_modificar_tipo_producto">error</p>-->
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar col-sm-12 col-md-12 col-xl-12">
+                        <button type="submit" id="enviar_producto" class="btn btn-primary formulario__btn">Actualizar</button>                                                           
+                    </div>                                  
+                </form>
+            {% endif %}
+        {% endif %}          
+    </div>
+    <br>
+    <br>
+    <div>
+        {% if mensaje %}
+            <h3>{{mensaje}}</h3>
+        {% endif %}
+    </div>
+    <br><br>
+    <div>
+        <button class="btn btn-primary formulario__btn"><a href="{% url 'buscar' %}" style="color: aliceblue;">Volver</a></button> 
+    </div>
+    <br>      
+    <footer class="pie_pagina_adm">
+        <div class="grupo_footer">
+            <small>&copy; 2023 <b>KladenztinoGourmet</b> - Todos los Derechos Reservados.</small>
+        </div>        
+    </footer>    
+</body>    
+</html>

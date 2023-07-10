@@ -1,0 +1,1100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*pagina index*/
+/*parte1 Header*/
+
+#principal div header div a img {
+    margin-left: 20%;
+}
+
+#principal div header nav div div ul .nosotros {
+    padding-left: 20%;
+    transition: all .5s ease;
+}
+
+#principal div header nav div div form {
+    padding-left: 38%;
+}
+
+#principal div header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#principal div header nav div div .cuenta-carrito .cuenta{
+    padding-left: 5%;
+    margin-top: 1%;
+    transition: all .5s ease;
+}
+
+#principal div header nav div div .cuenta-carrito .cuenta:hover{
+    color: #ca8c46;
+    transform: scale(1.3,1.3);
+}
+
+#principal div header nav div div form button {
+    background-color: #747a77;
+}
+
+#principal div header nav div div .cuenta-carrito .carrito{
+    font-size: 150%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+    padding-left: 60%;    
+}
+
+#principal div header nav div div .cuenta-carrito .carrito:hover{
+    color: #ca8c46;
+    transform: scale(1.3,1.3);
+}
+
+#principal div header nav div div ul .nosotros a:hover{
+    color: #ca8c46;
+    transform: scale(1.5,1.5);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #principal div header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #principal div header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #principal div header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #principal div header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #principal div header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#principal div header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#principal div .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#principal div .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+#principal div .menu div .vegano{
+    color: #747a77;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+#principal div .menu div .vegano:hover{
+    color: #04b639;
+    transform: scale(2);
+}
+
+/*parte 1 carrusel*/
+
+#principal #carrusel{
+    margin-left: 10%;
+}
+
+#principal #carrusel div div div img{
+    border-radius: 1%;
+}
+
+/*Imagen 1 */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto1 img{
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto1 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #principal #carrusel .carru1 .carru2 .foto1 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #principal #carrusel .carru1 .carru2 .foto1 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #principal #carrusel .carru1 .carru2 .foto1 img {
+        width: 100%;
+
+    }
+}
+
+
+/*Imagen 2*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto2 img {
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto2 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #principal #carrusel .carru1 .carru2 .foto2 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #principal #carrusel .carru1 .carru2 .foto2 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #principal #carrusel .carru1 .carru2 .foto2 img {
+        width: 100%;
+
+    }
+}
+
+
+/*Imagen 3*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto3 img {
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #principal #carrusel .carru1 .carru2 .foto3 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #principal #carrusel .carru1 .carru2 .foto3 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #principal #carrusel .carru1 .carru2 .foto3 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #principal #carrusel .carru1 .carru2 .foto3 img {
+        width: 100%;
+
+    }
+}
+
+
+/*parte 2 destacados*/
+
+#sec2 .titulo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#sec2 #destacados {
+    margin: 2%;
+}
+
+#sec2 #destacados h4 {
+    text-align: center;
+    margin: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 130%;
+}
+
+#sec2 #destacados .estilo img {
+    border-radius: 8%;
+}
+
+
+/*Imagen destacado 1*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sec2 #destacados .dest1 img {
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #sec2 #destacados .dest1 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #sec2 #destacados .dest1 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #sec2 #destacados .dest1 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #sec2 #destacados .dest1 img {
+        width: 100%;
+
+    }
+}
+
+/*Imagen destacado 2*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sec2 #destacados .dest2 img {
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #sec2 #destacados .dest2 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #sec2 #destacados .dest2 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #sec2 #destacados .dest2 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #sec2 #destacados .dest2 img {
+        width: 100%;
+
+    }
+}
+
+/*Imagen destacado 3 y 4*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #sec2 #destacados .dest3 img {
+        width: 100%;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #sec2 #destacados .dest3 img {
+        width: 100%;
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #sec2 #destacados .dest3 img {
+        width: 100%;
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #sec2 #destacados .dest3 img {
+        width: 100%;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #sec2 #destacados .dest3 img {
+        width: 100%;
+
+    }
+}
+
+
+/*parte 3 footer*/
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer .sociales {
+    background: hsl(0, 0%, 5%);
+    /*distribuye los iconos en el footer*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+}
+
+.pie-pagina .sociales a {
+    font-size: 150%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+}
+
+.pie-pagina .sociales i {
+    font-size: 150%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+}
+
+.pie-pagina .sociales .face:hover {
+    /*tamaño que se agrandar*/
+    transform: scale(1.3, 1.3);
+    /*color que tomara al pasar el mouse por encima*/
+    color: #2525a7;
+}
+
+.pie-pagina .sociales .ubicacion:hover {
+    transform: scale(1.3, 1.3);
+    color: #ce1212;
+}
+
+.pie-pagina .sociales .insta:hover {
+    transform: scale(1.3, 1.3);
+    color: #570b9d;
+}
+
+.pie-pagina .sociales .what:hover {
+    transform: scale(1.3, 1.3);
+    color: #0f8a1b;
+}
+
+.pie-pagina .sociales .mail:hover {
+    transform: scale(1.3, 1.3);
+    color: #be8313;
+}
+
+
+/*pagina vegano*/
+/*header*/
+
+#vegano header nav div a img {
+    margin-left: 20%;
+}
+
+#vegano header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#vegano header nav div div form {
+    padding-left: 38%;
+}
+
+#vegano header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#vegano header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #vegano header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #vegano header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #vegano header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #vegano header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #vegano header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#vegano header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#vegano .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#vegano .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+/*parte 2 cuerpo*/
+
+#vegano .cuerpoveg{
+    margin-left: 28%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+
+/*pagina nosotros*/
+/*header*/
+
+#nosotros header nav div a img {
+    margin-left: 20%;
+}
+
+#nosotros header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#nosotros header nav div div form {
+    padding-left: 38%;
+}
+
+#nosotros header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#nosotros header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #nosotros header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #nosotros header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #nosotros header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #nosotros header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #nosotros header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#nosotros header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#nosotros .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#nosotros .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+/*parte 2 descripcion*/
+
+#nosotros .desc{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+#nosotros .row .titnos {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e0f0e;
+    font-size: 200%;    
+}
+
+#nosotros .row .linnos {
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e0f0e;
+    font-size: 150%;
+}
+
+
+/*pagina mi cuenta*/
+/*header*/
+
+#cuenta header nav div a img {
+    margin-left: 20%;
+}
+
+#cuenta header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#cuenta header nav div div form {
+    padding-left: 38%;
+}
+
+#cuenta header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#cuenta header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #cuenta header nav div a img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #cuenta header nav div a img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #cuenta header nav div a img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #cuenta header nav div a img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #cuenta header nav div a img {
+        width: 37%;
+    }
+}
+
+#cuenta header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#cuenta .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#cuenta .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+} 
+
+/*parte 2 login*/
+
+#cuenta .login{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 1%;    
+    
+}
+
+/*pagina carrito*/
+/*header*/
+
+#carrito header nav div a img {
+    margin-left: 20%;
+}
+
+#carrito header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#carrito header nav div div form {
+    padding-left: 38%;
+}
+
+#carrito header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#carrito header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #carrito header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #carrito header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #carrito header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #carrito header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #carrito header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#carrito header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#carrito .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#carrito .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+/*parte 2 cuerpo*/
+#carrito .cuerpocar{
+    margin-left: 28%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/*pagina registro*/
+/*header*/
+
+#registro header nav div a img {
+    margin-left: 20%;
+}
+
+#registro header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#registro header nav div div form {
+    padding-left: 38%;
+}
+
+#registro header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#registro header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #registro header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #registro header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #registro header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #registro header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #registro header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#registro header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#registro .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#registro .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+
+#registro .regist{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*------------Input del formulario-------------------------------*/
+
+.formulario__grupo-input {
+	position: relative;
+    width: 70%;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+    color: #ca4242;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+/*----- Mensaje error al enviar formulario*/
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+
+/*----- Mensaje exito luego del summit ------*/
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/*PGINA REGISTRO PRUEBA*/
+
+#registro .regist{
+    display: flex;
+    justify-content: left;    
+    margin-bottom: 1%;        
+}
+
+.formulario__input-error1{
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+    color: #ca4242;
+}
+
+/*Productos*/
+
+#footprod{
+    margin-top: 15%;
+}
+
+

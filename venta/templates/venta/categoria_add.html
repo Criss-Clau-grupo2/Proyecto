@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Categoria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>     
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    <header class="header_adm">
+        <div class="logo">
+            <img src="{% static 'img/logo171x177-removebg-preview.png' %}" alt="Logo de la marca">
+        </div>        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">KlandeztinoGourmet Administrador</a></li>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="#"> 
+                        {% if  user.is_authenticated %}
+                            Bienvenido: {{user.username}}                      
+                        {% else %}
+                            <a href="{% url 'login' %}">Log In</a>  
+                        {% endif %}        
+                    </a></li>
+                <li><a href="{% url 'logout'%}">Cerrar Sesión</a></li>    
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div>
+        <h3>FORMULARIO PARA AGREGAR UNA NUEVA CATEGORIAS</h3>
+    </div>
+    <br>    
+    <div>
+        {% if user.username != 'cliente1' %}
+            <form action="" method="post">
+                {% csrf_token %}
+                    {{ forms.as_table }}
+                <div>
+                    <input type="submit" value="Agregar" class="btn btn-primary formulario__btn">
+                </div>
+            </form>
+        {% endif %}    
+    </div>
+    <br>
+    <div>
+        {% if mensaje %}
+            <h3>{{mensaje}}</h3>
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-primary formulario__btn"><a href="{% url 'listar_categoria' %}" style="color: aliceblue;">Volver</a></button>     
+    </div>
+    <footer class="pie_pagina_adm">
+        <div class="grupo_footer">
+            <small>&copy; 2023 <b>KladenztinoGourmet</b> - Todos los Derechos Reservados.</small>
+        </div>        
+    </footer>  
+</body>
+</html>

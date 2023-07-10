@@ -1,0 +1,790 @@
+/*Probando barra de navegacion para el menu del admin*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+/*Header*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.header_adm{
+    background-color: #1b3039;
+    background-image: radial-gradient(circle at 13.75% 53.17%, #6e6865 0, #474d50 25%, #1a2f39 50%, #001424 75%, #000014 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    padding: 5px 3%;
+}
+
+.header_adm .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header_adm .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;   
+}
+
+.header_adm .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header_adm .nav-links{
+    list-style: none;
+    padding-top: 15px;
+    transition: 0.2s;
+}
+
+.header_adm .nav-links li{
+    display: inline-block;
+    padding: 0 30px;    
+}
+
+.header_adm .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header_adm .nav-links a{
+    font-size: large;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header_adm .nav-links li a:hover {
+    color: #ffbc0e;
+}
+
+.header_adm .nav-links li:hover{
+    transition:  all 0.5s;
+}
+
+/*--Titulo Portada--*/
+.portada{
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    color: #747a77;
+    font-size: 200%;    
+}
+
+/*--Menu Categorias--*/
+.menu{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;          
+}
+
+.menu_transision:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.menu_sin_lineas{
+    text-decoration: none;
+    color: #747a77;    
+    transition: 0.5s;        
+}
+
+.menu_sin_lineas:hover{
+    color: #ffbc0e;
+    transform: scale(1.2);    
+}
+
+/*--Carrusel--*/
+div div div img{
+    border-radius: 1%;             
+}
+
+/*Imagen 1 */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carrusel div div img{
+        width: 100%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .carrusel div div img{
+        width: 100%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .carrusel div div img{
+        width: 100%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carrusel div div img{
+        width: 100%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .carrusel div div img{
+        height: 95vh;        
+        width: 100%;
+    }
+}
+
+/*--portada favoritos--*/
+.portada2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: bold;
+    color: #747a77;
+    font-size: 200%;    
+}
+
+/*--Footer--*/
+footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer .sociales {
+    background-color: #1b3039;
+    background-image: radial-gradient(circle at 13.75% 53.17%, #6e6865 0, #474d50 25%, #1a2f39 50%, #001424 75%, #000014 100%);
+    /*distribuye los iconos en el footer*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+}
+
+.pie-pagina .sociales a {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 150%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+}
+
+.pie-pagina .sociales .contacto {
+    font-family: 'Nunito', sans-serif;
+    font-size: 90%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+}
+
+.pie-pagina .sociales i {
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    color: #f9fdf9;
+    /*lo que demora en agrandar 5mseg*/
+    transition: all .5s ease;
+}
+
+.pie-pagina .sociales .face:hover {
+    /*tamaño que se agrandar*/
+    transform: scale(1.3, 1.3);
+    /*color que tomara al pasar el mouse por encima*/
+    color: #2f2fc7;
+}
+
+.pie-pagina .sociales .ubicacion:hover {
+    transform: scale(1.3, 1.3);
+    color: #ce1212;
+}
+
+.pie-pagina .sociales .insta:hover {
+    transform: scale(1.3, 1.3);
+    color: #873bce;
+}
+
+.pie-pagina .sociales .twit:hover {
+    transform: scale(1.3, 1.3);
+    color: #779ac6;
+}
+
+.pie-pagina .sociales .what:hover {
+    transform: scale(1.2, 1.2);
+    color: #0f8a1b;
+}
+
+.pie-pagina .sociales .mail:hover {
+    transform: scale(1.2, 1.2);
+    color: #be8313;
+}
+
+.pie-pagina div .derechos{
+    font-size: x-large;
+    color: #eceff1;
+    text-decoration: none;  
+    justify-content: center;  
+}
+
+.pie-pagina div .derechos small:hover{
+    color: #ffbc0e;
+}
+
+.pie-pagina div .derechos small:hover{
+    transition: 0.3s;
+}
+/*------------------------------------------------------------------------------------------*/
+
+/*pagina vegano*/
+/*header*/
+
+#vegano header nav div a img {
+    margin-left: 20%;
+}
+
+#vegano header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#vegano header nav div div form {
+    padding-left: 38%;
+}
+
+#vegano header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#vegano header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #vegano header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #vegano header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #vegano header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #vegano header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #vegano header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#vegano header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#vegano .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#vegano .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+/*parte 2 cuerpo*/
+
+#vegano .cuerpoveg{
+    margin-left: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #vegano .row img {
+        width: 60%;
+    }
+}
+
+
+/*pagina nosotros*/
+
+/*parte descripcion*/
+.desc{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 50%;
+    float: left;
+}
+
+.algo{
+    margin-top: 10%;
+}
+
+.desc .titulo_nosotros{
+    font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+    color: #000014;
+}
+
+.desc .desc_nosotros{
+    font-family: 'Nunito', sans-serif;
+    font-size: 150%;
+    color: #000014;
+}
+
+/*pagina mi cuenta*/
+/*header*/
+
+#cuenta header nav div a img {
+    margin-left: 20%;
+}
+
+#cuenta header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#cuenta header nav div div form {
+    padding-left: 38%;
+}
+
+#cuenta header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#cuenta header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #cuenta header nav div a img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #cuenta header nav div a img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #cuenta header nav div a img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #cuenta header nav div a img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #cuenta header nav div a img {
+        width: 37%;
+    }
+}
+
+#cuenta header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#cuenta .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#cuenta .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+} 
+
+/*parte 2 login*/
+
+#cuenta .login{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 1%;    
+    
+}
+
+/*pagina carrito*/
+/*header*/
+
+#carrito header nav div a img {
+    margin-left: 20%;
+}
+
+#carrito header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#carrito header nav div div form {
+    padding-left: 38%;
+}
+
+#carrito header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#carrito header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #carrito header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #carrito header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #carrito header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #carrito header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #carrito header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#carrito header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#carrito .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#carrito .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+/*parte 2 cuerpo*/
+#carrito .cuerpocar{
+    margin-left: 28%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #carrito .row img {
+        width: 60%;
+    }
+}
+
+/*pagina registro*/
+/*header*/
+
+#registro header nav div a img {
+    margin-left: 20%;
+}
+
+#registro header nav div div ul .nosotros {
+    padding-left: 20%;
+}
+
+#registro header nav div div form {
+    padding-left: 38%;
+}
+
+#registro header nav div div .cuenta-carrito {
+    padding-left: 5%;
+}
+
+#registro header nav div div form button {
+    background-color: #747a77;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #registro header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #registro header .hsec1 div .logo img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #registro header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #registro header .hsec1 div .logo img {
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #registro header .hsec1 div .logo img {
+        width: 37%;
+    }
+}
+
+#registro header .hsec1 div .logo {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*parte 1 Menu*/
+
+#registro .titulo {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+    font-size: 200%;
+}
+
+#registro .menu {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #747a77;
+}
+
+
+#registro .regist{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*------------Input del formulario-------------------------------*/
+
+.formulario__grupo-input {
+	position: relative;
+    width: 70%;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+    color: #ca4242;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+/*----- Mensaje error al enviar formulario*/
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+
+/*----- Mensaje exito luego del summit ------*/
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/*PGINA REGISTRO PRUEBA*/
+
+#registro .regist{
+    display: flex;
+    justify-content: left;    
+    margin-bottom: 1%;        
+}
+
+.formulario__input-error1{
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+    color: #ca4242;
+}
+
+/*Productos*/
+
+#footprod{
+    margin-top: 15%;
+}
+
+.cartas div{
+    margin-right: 5%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
