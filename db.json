@@ -1,0 +1,109 @@
+{
+    "productos": {
+        "001": {
+            "id": "1",
+            "nombre": "Apple Pie.",
+            "precio": "$18.000",
+            "descripcion": "Apple Pie relleno de frescas manzanas laminadas con salsa de vainilla y cubierta de miga Streusel.",
+            "imagen": "https://comidasperuanas.net/wp-content/uploads/2020/10/Pie-de-Manzana-Peruano.jpg"
+        },
+        "002": {
+            "id": "2",
+            "nombre": "Cheesecake de frambuesa",
+            "precio": "$25.000",
+            "descripcion": "Suave y cremoso cheesecake de frutos rojos con frescos arándanos y con salsa de frambuesa.",
+            "imagen": "http://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/b4a6675b16166a085b83a46a71879c91.webp?itok=I36y9IoL"
+        },
+        "003": {
+            "id": "3",
+            "nombre": "Torta Red Velvet.",
+            "precio": "$24.000",
+            "descripcion": "Un pastel de terciopelo rojo es un pastel de chocolate con un color rojo oscuro o rojo brillante. Por lo general es preparado como un pastel en capas cubierto con un glaseado de queso cremoso o roux cocinado. Los ingredientes comunes son mantequilla, harina, cacao, y colorante de remolacha o de comida roja.",
+            "imagen":"https://img-global.cpcdn.com/recipes/3a3eeebd86c9d382/400x400cq70/photo.jpg"
+        },
+        "004": {
+            "id": "4",
+            "nombre": "Torta de bizcocho de chocolate.",
+            "precio": "$24.000",
+            "descripcion": "Con sabores y texturas, esta es una torta de bizcocho de chocolate negro relleno con manjar, toffe y truffas.",
+            "imagen":"https://www.gourmet.cl/wp-content/uploads/2017/05/torta-choc-manjar-editada.jpg"
+        },
+        "005": {
+            "id": "5",
+            "nombre": "La Joyita.",
+            "precio": "$11.900",
+            "descripcion": "Hamburguesa Angus ahumada en roble frances,papa camote en hilos,queso mozzarella y cheddar con roast beef de res,cebolla crispy y mayo casera.",
+            "imagen":"https://media-cdn.tripadvisor.com/media/photo-s/0e/a7/a3/07/la-joya-restaurante-y.jpg"
+        },
+        "006": {
+            "id": "6",
+            "nombre": "Picardia.",
+            "precio": "$9.900",
+            "descripcion": "Hamburguesa Angus ahumada en roble frances,queso mozzarella,hojas de lechuga,camarones con tocino gy acompañado de salsa thousand .",
+            "imagen":"https://media-cdn.tripadvisor.com/media/photo-s/16/f0/18/7d/la-playera.jpg"
+        },
+        "007": {
+            "id": "7",
+            "nombre": "Lengua Madre.",
+            "precio": "$8.900",
+            "descripcion": "Lengua de res sellada al grill sobre cebolla caramelizada,pimientos asados,queso parmesano,fondos de alcachofa y mayo casera.",
+            "imagen":"https://media-cdn.tripadvisor.com/media/photo-s/14/9b/4a/f0/la-joya-sanguches.jpg"
+        },
+        "008": {
+            "id": "8",
+            "nombre": "Atun caprichoso.",
+            "precio": "$8.900",
+            "descripcion": "Cortes de atun en costra de sesamo sellado al grill,servido con mix de hojas verdes,mango y almendras.",
+            "imagen":"https://www.gourmet.cl/wp-content/uploads/2021/10/ensalada-de-at%C3%BAn-internet-1.jpg"
+        },
+        "009": {
+            "id": "9",
+            "nombre": "Mosaico",
+            "precio": "$8.900",
+            "descripcion": "Filete de salmon curado a la beterraga,base de lechuga y mix de choclo,tomates chery,palta,ciboulette y sour cream.",
+            "imagen":"https://historiasentrefogones.com/wp-content/uploads/2019/03/salmon-miel-mostaza.jpg"
+        },
+        "010": {
+            "id": "10",
+            "nombre": "Creme brulee",
+            "precio": "$3.900",
+            "descripcion": "Mezcla cremosa infusionada en flores de lavanday arandano con una capa crocante de azucar rubia.",
+            "imagen":"https://canalcocina.es/medias/_cache/zoom-1ead980a21bf926fa28490ebfee8fd01-920-518.jpg"
+        },
+        "011": {
+            "id": "11",
+            "nombre": "Brownie con helado",
+            "precio": "$3.900",
+            "descripcion": "Untoso bizcocho de chocolate 60% cacao,fundido con nueces y servido con una bola de helado de vainilla",
+            "imagen":"https://cocina-casera.com/wp-content/uploads/2015/04/brownie_chocolate_receta.jpg"
+        },
+        "012": {
+            "id": "12",
+            "nombre": "Chocotorta",
+            "precio": "$3.900",
+            "descripcion": "Clasico postre argentino a base de bizcocho de galletas de chocolate infusionadas en cafe de grano y licor de amarula.",
+            "imagen":"https://lasrecetasdelchef.net/wp-content/uploads/2020/05/chocotorta-clasica.jpg"
+        },
+        "013": {
+            "id": "13",
+            "nombre": "Provoleta",
+            "precio": "$8.900",
+            "descripcion": "Queso provolone, pimientos asados, nuestro pan casero..",
+            "imagen":"https://www.clarin.com/img/2022/08/31/SvRumKBuh_720x0__1.jpg"
+        },
+        "014": {
+            "id": "14",
+            "nombre": "Croquetas Ibéricas",
+            "precio": "$8.200",
+            "descripcion": "De charcutería 100% ibérica de bellota, acompañada de salsa de peras asadas.",
+            "imagen":"https://z-p3-scontent.fkna2-1.fna.fbcdn.net/v/t1.18169-9/387844_255268267862594_275017074_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeGRGoTnOxbBVu0uGv6ZG6DBjdAiu-VirsSN0CK75WKuxMQOt20R2erCVDo92y29Yf8&_nc_ohc=P598mwE4b5AAX9bJ6Zw&_nc_ht=z-p3-scontent.fkna2-1.fna&oh=00_AfAN3IZJ-Z1VLnF5QBbyZWuNyBkl_m4qBWGNhTpJb4aIDg&oe=647FA2DB"
+        },
+        "015": {
+            "id": "15",
+            "nombre": "Vuelve a la Vida",
+            "precio": "$11.500",
+            "descripcion": "Pulpo, gambas, palta, maiz, tomate cherry, rabanitos, salsa vuelve a la vida Roberta acompañado de totopos caseros.",
+            "imagen": "https://i.pinimg.com/originals/df/ef/43/dfef439f77aec2b80f22970f008459bc.jpg"
+        }
+    }
+}
