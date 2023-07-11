@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.http import HttpResponse
 
-from venta.Carrito import Carrito
-from venta.models import Producto,Tipo_producto
+from venta.carrito import Carrito
+from .models import Producto,Tipo_producto
 from .forms import Tipo_productoForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User,Group
@@ -292,23 +292,23 @@ def agregar_productos(request,producto_id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id_producto=producto_id)
     carrito.agregar(producto)
-    return redirect("tienda")
+    return redirect("carrito")
 
 def eliminar_productos(request,id_producto):
     carrito = Carrito(request) 
     producto = Producto.objects.get(id_producto=id_producto)
     carrito.eliminar(producto)
-    return redirect("tienda")
+    return redirect("carrito")
 
 def restar_producto(request,id_producto):     
     carrito = Carrito(request) 
     producto = Producto.objects.get(id_producto=id_producto)
     carrito.restar(producto)
-    return redirect("tienda")
+    return redirect("carrito")
 
 def limpiar_carrito(request):
     carrito = Carrito(request)
     carrito.limpiar()
-    return redirect("tienda")         
+    return redirect("carrito")         
 
   

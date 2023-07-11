@@ -89,7 +89,7 @@
                         <p class="card-text">{{tmp.desc_producto}}</p>
                         <!--<p class="card-text">{{tmp.id_tipo_producto}}</p>-->
                         <p class="card-text">$ {{tmp.precio_producto}}</p>
-                        <a href="{% url 'agregar' pk=tmp.id_producto %}]" class="btn btn-primary">Agregar</a>
+                        <a href="{% url 'Add' tmp.id_producto %}" class="btn btn-primary">Agregar</a>
                     </div>
                 </div>
             {% endfor %}                     
@@ -132,6 +132,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="js/scriptApi.js"></script>
+    
 </body>
 </html>
