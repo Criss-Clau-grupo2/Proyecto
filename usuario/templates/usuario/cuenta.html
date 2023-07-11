@@ -26,10 +26,10 @@
 
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item inicio">
-                                <a class="nav-link" href="index.html">Inicio</a>
+                                <a class="nav-link" href="{%  url 'index' %}">Inicio</a>
                             </li>
                             <li class="nav-item nosotros">
-                                <a class="nav-link nosotros" href="productos.html">Productos</a>
+                                <a class="nav-link nosotros" href="#">Productos</a>
                             </li>
                         </ul>
                         <form class="d-flex">
@@ -89,7 +89,9 @@
                 <!--Grupo btn ingresar y registrar-->
                 <div class="formulario__grupo formulario__grupo-btn-enviar col-sm-12 col-md-12 col-xl-12">
                     <button type="submit" id="ingresar" class="btn btn-primary formulario__btn">Ingresar</button>  
-                    <button type="button" class="btn btn-primary" onclick="location.href='registro.html'">Registrar</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='registro.html'">
+                        <a href="{% url 'registro' %}" class="btn btn-secondary" role="button">Registrar</a>
+                    </button>
                     
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>                 
                 </div>
