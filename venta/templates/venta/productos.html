@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-links">
                     <li class="nav-item">
-                        <a href="{% url 'tienda' %}">Carrito</a>
+                        <a href="#">Carrito</a>
                     </li>
                     <li class="nav-item">
                         <a href="#">
@@ -87,14 +87,17 @@
                     <div class="card-body">
                         <h4 class="card-title">{{tmp.nombre_producto}}</h4>
                         <p class="card-text">{{tmp.desc_producto}}</p>
-                        <p class="card-text">{{tmp.id_tipo_producto}}</p>
+                        <!--<p class="card-text">{{tmp.id_tipo_producto}}</p>-->
                         <p class="card-text">$ {{tmp.precio_producto}}</p>
-                        <a href="{% url 'tienda' %}" class="btn btn-primary">Agregar al carrito</a>
+                        <a href="{% url 'agregar' pk=tmp.id_producto %}]" class="btn btn-primary">Agregar</a>
                     </div>
                 </div>
             {% endfor %}                     
-        </div>            
-    {% endif %}    
+        </div>
+    {% endif %}                
+    <div>
+        <a href="{% url 'carrito' %}"></a>
+    </div>  
     <footer class="pie-pagina">
         <div class="sociales container-fluid">
             <div class="derechos">

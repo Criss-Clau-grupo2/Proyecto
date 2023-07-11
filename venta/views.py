@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, HttpResponse
 from django.http import HttpResponse
-from .models import Producto,Tipo_producto
+
+from venta.Carrito import Carrito
+from venta.models import Producto,Tipo_producto
 from .forms import Tipo_productoForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User,Group
@@ -277,40 +279,36 @@ def modificar_categoria(request,pk):
 def menu_admin(request):          
     return render(request,'venta/menu_admin.html')       
  
-#carrito
+"""CARRITOOOO"""
 def tienda(request):
-    productos = Producto.objects.all()
-    return render(request,"venta/tienda.html", {'productos':productos}) 
+    listado_producto = Producto.objects.all()
+    context = {"productos":listado_producto}
+    return render(request,'venta/tienda.html',context)
 
-#agrgar al carrito
-def agregar_carrito(request,pk):
-    carrito = productos(request) 
-    producto = Producto.objects.get(id_producto=pk) 
-    carrito.agregar_carrito(producto)
-    return render(request,"venta/tienda.html")
+def carrito(request):          
+    return render(request,'venta/carrito.html')
 
-#eliminar del carrito
+def agregar_productos(request,producto_id):
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id_producto=producto_id)
+    carrito.agregar(producto)
+    return redirect("tienda")
 
-def eliminar_del_carrito(request,id_producto):
-    carrito = tienda(request) 
-    producto = Producto.objects.get(id = id_producto) 
+def eliminar_productos(request,id_producto):
+    carrito = Carrito(request) 
+    producto = Producto.objects.get(id_producto=id_producto)
     carrito.eliminar(producto)
-    return render(request,"venta/tienda.html")
+    return redirect("tienda")
 
-def restar_producto(request,id_producto):
-    carrito = tienda(request) 
-    producto = Producto.objects.get(id = id_producto) 
+def restar_producto(request,id_producto):     
+    carrito = Carrito(request) 
+    producto = Producto.objects.get(id_producto=id_producto)
     carrito.restar(producto)
-    return render(request,"venta/tienda.html")
+    return redirect("tienda")
 
-def limpiar_carrito(request):    
-    carrito = tienda(request)
+def limpiar_carrito(request):
+    carrito = Carrito(request)
     carrito.limpiar()
-    return render(request,"venta/tienda.html")
-    
-         
-            
-    
-    
-         
-        
+    return redirect("tienda")         
+
+  

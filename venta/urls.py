@@ -10,6 +10,7 @@ urlpatterns = [
     path('panaderia/',views.panaderia,name='panaderia'),
     path('promociones/',views.promociones,name='promociones'),
     path('variedades/',views.variedades,name='variedades'),
+    path('tienda/',views.tienda,name='tienda'),
 
     path('usuario/',include(('usuario.urls','usuario'))), 
     
@@ -25,12 +26,13 @@ urlpatterns = [
     path('borrarCategorias/<str:pk>',views.eliminar_categoria,name='categoria_del'),
     path('actualizarCategorias/<str:pk>',views.modificar_categoria,name='categoria_edit'),
     #MENU USUARIO/ADMIN
-    path('menuAdm',views.menu_admin,name='menu_adm'), 
-    #MENU CARRITO
-    path ('carrito/',views.tienda,name='tienda'),
-    path ('agregar/<str:pk>',views.agregar_carrito,name='addcarrito'),
-    path ('limpiar/',views.limpiar_carrito,name='limpcarrito'),
-    
+    path('menuAdm',views.menu_admin,name='menu_adm'),
+    #CARRITO
+    path('carrito/',views.carrito,name='carrito'), 
+    path('agregar/<int:producto_id>/',views.agregar_productos,name='Add'),
+    path('eliminar/<int:id_producto>/',views.eliminar_productos,name='Del'),
+    path('restar/<int:id_producto>/',views.restar_producto,name='Sub'),
+    path('limpiar/',views.limpiar_carrito,name='CLS'),
     
                
 ]
